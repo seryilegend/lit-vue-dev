@@ -1,5 +1,5 @@
 <template>
-    <div class='a'>Everything is temporary</div>
+    <div class='a'>→Everything is temporary←</div>
 </template>
 
 <script>
@@ -11,6 +11,7 @@ export default {
 <style scoped>
     .a {
         text-align: center;
-        color: green;
+        color: midnightblue;
+        background-color: pink;
     }
 </style>
