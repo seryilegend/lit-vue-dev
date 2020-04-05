@@ -1,0 +1,28 @@
+<template>
+    <div class='a'>
+        <p class="b"><img alt="СЛ logo" width="80" src="https://yt3.ggpht.com/a-/AOh14GjJBBv20OHDSiHlQ9DPLmNVcdpiiBoRRS11zUNLgw=s288-c-k-c0xffffffff-no-rj-mo"></p>
+        <a margin="10px" href="https://www.youtube.com/channel/UCiEHjtGwcor-v710Qp5doSg">Subscribe me on YouTube!</a>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'example_1'
+}
+</script>
+
+<style scoped>
+    .a {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        color: red;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .b {
+        text-align: center;
+    }
+</style>
