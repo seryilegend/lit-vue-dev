@@ -1,5 +1,8 @@
 <template>
-    <div class='a'>→Everything is temporary←</div>
+    <div>
+        <div class='a'>→Everything is temporary←</div>
+        <img src="https://clippz.ru/images/imagine-dragons-birds_w350r42f/50.jpg">
+    </div>
 </template>
 
 <script>
