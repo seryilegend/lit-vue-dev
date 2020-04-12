@@ -1,7 +1,5 @@
 <template>
-    <div class='a' @mouseenter="change_hoverCount()">
-        {{ actualText }}
-    </div>
+    <div class='a' @mouseenter="change_hoverCount()" @mouseleave="change_actualText()"><h1>{{ actualText }}</h1><p>Мышь наводилась {{ hoverCount }} раз</p></div>
 </template>
 
 <script>
@@ -11,13 +9,16 @@ export default {
         return {
             loadingStatus: '',
             hoverCount: 0,
-            actualText: '',
+            actualText: 'Мышь не наведена',
         };
     },
     methods: {
         change_hoverCount() {
-            return (this.hoverCount ++);
+            return (this.hoverCount ++, this.actualText='Мышь наведена');
         },
+        change_actualText() {
+            return (this.actualText = 'Мышь не наведена');
+        }
     },
     beforeCreate() {
         this.loadingStatus='beforeCreate';
@@ -56,10 +57,12 @@ export default {
 
 <style scoped>
     .a {
-        color: aquamarine;
+        margin: auto;
+        margin-top: 20%;
+        background-color: aquamarine;
         width: 250px;
-        height: 125px;
+        height: 200px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 </style>
