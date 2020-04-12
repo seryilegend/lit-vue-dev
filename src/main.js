@@ -4,6 +4,7 @@ import Header from './components/Header.vue'
 import example_1 from './components/example_1.vue'
 import example_2 from './components/example_2.vue'
 import App from './App.vue'
+import VueCycle from './components/VueCycle.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -11,7 +12,8 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', component: Header },
   { path: '/example_1/', component: example_1 },
-  { path: '/example_2/', component: example_2 }
+  { path: '/example_2/', component: example_2 },
+  { path: '/vuecycle/', component: VueCycle }
 ]
 
 const router = new VueRouter({
