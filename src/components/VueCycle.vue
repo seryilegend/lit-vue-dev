@@ -1,5 +1,8 @@
 <template>
-    <div class='a' @mouseenter="change_hoverCount()" @mouseleave="change_actualText()"><h1>{{ actualText }}</h1><p>Мышь наводилась {{ hoverCount }} раз</p></div>
+    <div class="b">
+        <div class="c"><router-link to='/'>Header</router-link></div>
+        <div class='a' @mouseenter="change_hoverCount()" @mouseleave="change_actualText()"><h1>{{ actualText }}</h1><p>Мышь наводилась {{ hoverCount }} раз</p></div>
+    </div>
 </template>
 
 <script>
@@ -64,5 +67,14 @@ export default {
         height: 200px;
         display: flex;
         flex-direction: column;
+    }
+    .b {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+    }
+    .c {
+        margin-top: 10px;
+        background-color: aqua;
     }
 </style>
