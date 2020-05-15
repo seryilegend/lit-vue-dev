@@ -2,6 +2,7 @@
     <div class="b">
         <div class="c"><router-link to='/'>Header</router-link></div>
         <div class='a' @mouseenter="change_hoverCount()" @mouseleave="change_actualText()"><h1>{{ actualText }}</h1><p>Мышь наводилась {{ hoverCount }} раз</p></div>
+        <button class="d" v-if="updt==true" v-on:click="update()">Обнулить счетчик</button>
     </div>
 </template>
 
@@ -13,14 +14,18 @@ export default {
             loadingStatus: '',
             hoverCount: 0,
             actualText: 'Мышь не наведена',
+            updt: false,
         };
     },
     methods: {
         change_hoverCount() {
-            return (this.hoverCount ++, this.actualText='Мышь наведена');
+            return (this.hoverCount ++, this.actualText='Мышь наведена', this.updt=true);
         },
         change_actualText() {
             return (this.actualText = 'Мышь не наведена');
+        },
+        update() {
+            return (this.updt=false, this.hoverCount=0)
         }
     },
     beforeCreate() {
@@ -76,5 +81,10 @@ export default {
     .c {
         margin-top: 10px;
         background-color: aqua;
+    }
+    .d {
+        width: 250px;
+        margin: auto;
+        padding: 10px;
     }
 </style>
