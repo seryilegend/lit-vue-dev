@@ -20,7 +20,7 @@ export const APP_STORE = {
         },
     },
     getters: {
-        buttonCont: (state) => state.buttonCont,
+        buttonConut: (state) => state.buttonCont,
         userPhrase: (state) => state.userPhrase,
     },
 };

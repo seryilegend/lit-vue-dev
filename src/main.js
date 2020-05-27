@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Vuex from 'vuex'
 import Header from './components/Header.vue'
 import example_1 from './components/example_1.vue'
 import example_2 from './components/example_2.vue'
