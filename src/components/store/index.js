@@ -12,7 +12,7 @@ export const APP_STORE = {
         },
     },
     actions: {
-        increment_count({ commit }) {
+        incrementCount({ commit }) {
             commit('INCREMENT_COUNT');
         },
         changeUserPhrase({ commit }, value) {
