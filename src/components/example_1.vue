@@ -32,11 +32,9 @@ export default {
         justify-content: center;
         align-content: center;
     }
-
     .b {
         text-align: center;
     }
-
     .c {
         color: orangered;
     }

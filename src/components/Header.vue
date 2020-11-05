@@ -6,6 +6,7 @@
             <div class="c"><router-link to='/example_1'>example_1</router-link></div>
             <div class="c"><router-link to='/example_2'>example_2</router-link></div>
             <div class="c"><router-link to='/vuecycle'>VueCycle</router-link></div>
+            <div class="c"><router-link to='/timer'>timer</router-link></div>
         </div>
     </div>
 </template>
@@ -18,9 +19,9 @@ export default {
 
 <style scoped>
     .a {
-    text-align: center;
-    color: blue;
-}
+        text-align: center;
+        color: blue;
+    }
     .b {
         display: flex;
         flex-direction: column;

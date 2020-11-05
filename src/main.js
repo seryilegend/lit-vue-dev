@@ -6,6 +6,7 @@ import example_1 from './components/example_1.vue'
 import example_2 from './components/example_2.vue'
 import App from './App.vue'
 import VueCycle from './components/VueCycle.vue'
+import timer from './components/timer.vue'
 import { APP_STORE } from './components/store'
 
 Vue.config.productionTip = false
@@ -16,7 +17,8 @@ const routes = [
   { path: '/', component: Header },
   { path: '/example_1/', component: example_1 },
   { path: '/example_2/', component: example_2 },
-  { path: '/vuecycle/', component: VueCycle }
+  { path: '/vuecycle/', component: VueCycle },
+  { path: '/timer/', component: timer },
 ];
 
 const router = new VueRouter({
