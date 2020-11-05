@@ -1,12 +1,12 @@
 <template>
     <div>
-        <img alt="lit logo" src="https://in.lit.msu.ru/static/images/themes/lit2011/logo.png">
-        <div class = 'a'>Welcome to lit-vue-dev</div>
-        <div class="b">
-            <div class="c"><router-link to='/example_1'>example_1</router-link></div>
-            <div class="c"><router-link to='/example_2'>example_2</router-link></div>
-            <div class="c"><router-link to='/vuecycle'>VueCycle</router-link></div>
-            <div class="c"><router-link to='/timer'>timer</router-link></div>
+        <img alt="" src="https://in.lit.msu.ru/static/images/themes/lit2011/logo.png">
+        <div class="title">Welcome to lit-vue-dev</div>
+        <div class="elements">
+            <router-link to="/example_1"><button class="link">example 1</button></router-link>
+            <router-link to="/example_2"><button class="link">example 2</button></router-link>
+            <router-link to="/vuecycle"><button class="link">VueCycle</button></router-link>
+            <router-link to="/clock"><button class="link">Clock</button></router-link>
         </div>
     </div>
 </template>
@@ -18,17 +18,23 @@ export default {
 </script>
 
 <style scoped>
-    .a {
+    .title {
         text-align: center;
         color: blue;
     }
-    .b {
+    .elements {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         background-color: aquamarine;
     }
-    .c {
-        margin-top: 10px;
-        background-color: white;
+    .link {
+        margin-top: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin: 10px;
+        height: 2rem;
+        width: 10rem;
+        color: blue;
     }
 </style>
