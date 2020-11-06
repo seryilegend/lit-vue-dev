@@ -2,17 +2,20 @@ export const APP_STORE = {
     state: {
         buttonCont: 0,
         userPhrase: '',
-        time: ''
+        time: '',
     },
     mutations: {
         INCREMENT_COUNT(state) {
-            state.buttonCont ++;
+            state.buttonCont++;
         },
         SET_USER_PHRASE(state, value) {
             state.userPhrase = value;
         },
         SET_TIME(state) {
             state.time = new Date().toLocaleTimeString();
+        },
+        RESET_COUNT(state) {
+            state.buttonCont = 0
         }
     },
     actions: {
@@ -21,7 +24,10 @@ export const APP_STORE = {
         },
         changeUserPhrase({ commit }, value) {
             commit('SET_USER_PHRASE', value);
-        }
+        },
+        resetCount({ commit }) {
+            commit('RESET_COUNT');
+        },
     },
     getters: {
         buttonCount: state => state.buttonCont,

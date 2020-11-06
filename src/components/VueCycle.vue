@@ -2,7 +2,7 @@
     <div class="b">
         <div class="c"><router-link to='/'>Header</router-link></div>
         <div class='a' @mouseenter="change_hoverCount()" @mouseleave="change_actualText()"><h1>{{ actualText }}</h1><p>Мышь наводилась {{ hoverCount }} раз</p></div>
-        <button class="d" v-if="updt==true" v-on:click="update()">Обнулить счетчик</button>
+        <div class="div"><button class="button" v-if="updt==true" v-on:click="update()">Обнулить счетчик</button></div>
     </div>
 </template>
 
@@ -82,9 +82,16 @@ export default {
         margin-top: 10px;
         background-color: aqua;
     }
-    .d {
+    .div {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        margin: 5px;
+        background-color: aqua;
+        border-radius: 0.5rem;
+        height: 2rem;
+        cursor: pointer;
         width: 250px;
-        margin: auto;
-        padding: 10px;
     }
 </style>

@@ -1,10 +1,11 @@
 <template>
-    <div class='a'>
-        <p class="b"><img alt="СЛ logo" width="80" src="https://yt3.ggpht.com/a-/AOh14GjJBBv20OHDSiHlQ9DPLmNVcdpiiBoRRS11zUNLgw=s288-c-k-c0xffffffff-no-rj-mo"></p>
+    <div class="wrapper">
+        <div><img alt="СЛ logo" width="80" src="https://yt3.ggpht.com/a-/AOh14GjJBBv20OHDSiHlQ9DPLmNVcdpiiBoRRS11zUNLgw=s288-c-k-c0xffffffff-no-rj-mo"></div>
         <a class="c" margin="10px" href="https://www.youtube.com/channel/UCiEHjtGwcor-v710Qp5doSg">Subscribe me on YouTube!</a>
-        <div class="d"><router-link to='/'>Header</router-link></div>
-        <button @click="incrementCount()">Посчитать клики</button>
+        <router-link to='/'><button class="button">Header</button></router-link>
+        <button class="button" @click="incrementCount()">Посчитать клики</button>
         <div>Клики: {{ buttonCount }}</div>
+        <button class="button" @click="resetCount()">Обнулить клики</button>
     </div>
 </template>
 
@@ -17,13 +18,13 @@ export default {
         ...mapGetters(['buttonCount', 'userPhrase'])
     },
     methods: {
-        ...mapActions(['changeUserPhrase', 'incrementCount'])
+        ...mapActions(['changeUserPhrase', 'incrementCount', 'resetCount'])
     },
 };
 </script>
 
 <style scoped>
-    .a {
+    .wrapper {
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -32,14 +33,14 @@ export default {
         justify-content: center;
         align-content: center;
     }
-    .b {
-        text-align: center;
-    }
     .c {
         color: orangered;
     }
-    .d {
-        margin-top: 10px;
+    .button {
+        margin: 5px;
         background-color: aqua;
+        border-radius: 0.5rem;
+        height: 2rem;
+        cursor: pointer;
     }
 </style>
