@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 export default {
   name: 'clock',
   data() {
@@ -19,11 +19,11 @@ export default {
     ...mapGetters(['time'])
   },
   methods: {
-
+    ...mapMutations(['SET_TIME'])
   },
   mounted() {
-    this.$store.commit('SET_TIME')
-    this.id = setInterval(() => this.$store.commit('SET_TIME'), 1000)
+    this.SET_TIME()
+    this.id = setInterval(this.SET_TIME, 1000)
   },
   beforeDestroy() {
     clearInterval(this.id)
