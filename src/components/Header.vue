@@ -3,7 +3,7 @@
         <img alt="" src="https://in.lit.msu.ru/static/images/themes/lit2011/logo.png">
         <div class="title">Welcome to lit-vue-dev</div>
         <div class="elements">
-            <router-link to="/example_1"><button class="link">example 1</button></router-link>
+            <router-link to="/click_counter"><button class="link">Click counter</button></router-link>
             <router-link to="/example_2"><button class="link">example 2</button></router-link>
             <router-link to="/vuecycle"><button class="link">VueCycle</button></router-link>
             <router-link to="/clock"><button class="link">Clock</button></router-link>

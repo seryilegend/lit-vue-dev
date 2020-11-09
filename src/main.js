@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import Header from './components/Header.vue'
-import example_1 from './components/example_1.vue'
+import click_counter from './components/click_counter'
 import example_2 from './components/example_2.vue'
 import App from './App.vue'
 import VueCycle from './components/VueCycle.vue'
@@ -15,7 +15,7 @@ Vue.use(Vuex);
 
 const routes = [
   { path: '/', component: Header },
-  { path: '/example_1/', component: example_1 },
+  { path: '/click_counter/', component: click_counter },
   { path: '/example_2/', component: example_2 },
   { path: '/vuecycle/', component: VueCycle },
   { path: '/clock/', component: clock },
