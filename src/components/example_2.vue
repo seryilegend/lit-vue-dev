@@ -16,14 +16,15 @@ export default {
         return {
             vis: true,
             objects: [
-                {title: 'Big thangs', description: 'sure enough'},
-                {title: 'Theres a monster', description: 'coming from the forest'},
+                {title: 'Big things', description: 'sure enough'},
+                {title: 'There`s a monster', description: 'coming from the forest'},
                 {title: 'Sheep', description: 'gang glorious'},
                 {title: 'Run thru the city', description: 'with a message for it'},
-                {title: 'Big thangs', description: 'sure enough'},
-                {title: 'Theres a monster', description: 'coming from the forest'},
+                {title: 'Big things', description: 'sure enough'},
+                {title: 'There`s a monster', description: 'coming from the forest'},
                 {title: 'Sheep', description: 'gang glorious'},
-                {title: 'As the hearts burn', description: 'all the sheep are coming up'}
+                {title: 'As the hearts burn', description: 'all the sheep are coming up'},
+                {title: 'We are glorious', description: 'All the sheep are coming up'}
             ]
         }
     }
