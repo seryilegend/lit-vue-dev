@@ -63,11 +63,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$color: aqua;
     .a {
         margin: auto;
         margin-top: 20%;
-        background-color: aquamarine;
+        background-color: $color;
         width: 250px;
         height: 200px;
         display: flex;
@@ -80,7 +81,7 @@ export default {
     }
     .c {
         margin-top: 10px;
-        background-color: aqua;
+        background-color: $color;
     }
     .div {
         display: flex;
@@ -88,7 +89,7 @@ export default {
     }
     .button {
         margin: 5px;
-        background-color: aqua;
+        background-color: $color;
         border-radius: 0.5rem;
         height: 2rem;
         cursor: pointer;
