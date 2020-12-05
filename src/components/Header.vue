@@ -7,6 +7,7 @@
             <router-link to="/example_2"><button class="link">example 2</button></router-link>
             <router-link to="/vuecycle"><button class="link">VueCycle</button></router-link>
             <router-link to="/clock"><button class="link">Clock</button></router-link>
+            <router-link to="/request"><button class="link">Request</button></router-link>
         </div>
     </div>
 </template>

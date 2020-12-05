@@ -7,6 +7,7 @@ import example_2 from './components/example_2.vue'
 import App from './App.vue'
 import VueCycle from './components/VueCycle.vue'
 import clock from './components/clock.vue'
+import request from './components/requestComponent.vue'
 import { APP_STORE } from './components/store'
 
 Vue.config.productionTip = false
@@ -19,6 +20,7 @@ const routes = [
   { path: '/example_2/', component: example_2 },
   { path: '/vuecycle/', component: VueCycle },
   { path: '/clock/', component: clock },
+  { path: '/request/', component: request },
 ];
 
 const router = new VueRouter({
